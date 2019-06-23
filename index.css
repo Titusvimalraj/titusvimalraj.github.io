@@ -6,3 +6,8 @@
 .blue-black {
 	background-color: blue;
 }
+
+.first-letter {
+  font-size: 4rem;
+  line-height: 10vh;
+}
