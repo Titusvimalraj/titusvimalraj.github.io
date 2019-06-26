@@ -11,3 +11,12 @@
   font-size: 4rem;
   line-height: 10vh;
 }
+
+@media only screen and (max-width: 1145px) {
+.profile-Image-Resizing {
+	width: 80vw;
+}
+}
+
+
+
