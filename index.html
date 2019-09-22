@@ -1,0 +1,790 @@
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>WeMatch Matrimony</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--BootstrapDatePicker  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!--Bootstrap select  -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+    <!-- font Awesome icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Bootstrap Date Picker  -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+        rel="stylesheet"> -->
+
+    <!--flatpickr Date Picker  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.2/flatpickr.css" rel="stylesheet">
+
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
+        <!--style="background-color:#97303B;"-->
+        <a class="navbar-brand logo" href="#"><img class="img-fluid" width="100%" src="./Logo.JPG"
+                alt="WeMatch Matrimony"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 80vw;">
+            <ul class="navbar-nav" style="width:100%">
+                <li class="nav-item active navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">Login</a>
+                </li>
+                <li class="nav-item navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">Search</a>
+                </li>
+                <li class="nav-item navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">Upgrade</a>
+                </li>
+                <li class="nav-item navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item navLinkLi">
+                    <a class="nav-link navlinkItem" href="#">About Us</a>
+                </li>
+            </ul>
+            <div class="container-fluid loginNavFormContainer">
+                <form class="form-inline nav-item loginNavForm centerContent">
+                    <ul class="navbar-nav centerContent loginNavFormUl">
+                        <li class="nav-item loginNavFormLi">
+                            <div class="form-group nav-item">
+                                <label class="centerContent loginNavFormLabel" for="navbarInputEmail"
+                                    style="font-size:0.8rem">Member ID/Email</label>
+
+                                <input type="email" class="centerContent inputwidth form-control" id="navbarInputEmail"
+                                    aria-describedby="keepmeLoggedIn" placeholder="Member ID">
+                                <small id="keepmeLoggedIn" class="form-text text-muted">
+                                    <input type="checkbox" value="yes" id="STAYLOGIN" name="STAYLOGIN"
+                                        checked="checked">
+                                    Keep me logged in
+                                </small>
+                            </div>
+                        </li>
+                        <li class="nav-item loginNavFormLi">
+                            <div class="form-group nav-item">
+                                <label class="centerContent loginNavFormLabel" for="navbarInputPassword"
+                                    style="font-size:0.8rem">Password</label>
+                                <input type="password" class="centerContent inputwidth form-control"
+                                    id="navbarInputPassword" placeholder="Password" aria-describedby="forgetPassword">
+                                <small id="forgetPassword" class="form-text text-muted">
+                                    <a class="font12 clr9"
+                                        onclick="forgotPassword('https://www.WeMatchMatrimony.com');litebox('forgotpwddiv',500);"
+                                        href="javascript:void(0);">Forgot your password?</a>
+                                </small>
+                            </div>
+                        </li>
+                        <li class="nav-item loginNavFormLoginButtonLi centerContent">
+                            <div class="nav-item loginNavFormLoginButtonDiv">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div class="container-fluid fullWidth" style="padding:0 0 0 0">
+
+        <!-- first row -->
+        <div class="row quickregisterFormBackground">
+            <div class="col quickRegisterFormCard">
+                <div class="card quickRegisterForm">
+                    <div class="card-body">
+                        <div id="quickRegisterationTitle">
+                            <h5 class="card-title text-center" id="quickRegisterFormCardTitle">Quick Registration</h5>
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <label for="profileSelect">Profile</label>
+                                    <select class="selectpicker" id="profileSelect">
+                                        <option value="2">Brother</option>
+                                        <option value="4">Daughter</option>
+                                        <option value="5">Friend</option>
+                                        <option value="6">Myself</option>
+                                        <option value="9">Relative</option>
+                                        <option value="13">Sister</option>
+                                        <option value="14" selected>Son</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="genderSelect">Gender</label>
+                                    <select class="selectpicker" id="genderSelect">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <label for="quickRegistrationLirstName">First Name</label>
+                                    <input type="text" class="form-control" id="quickRegistrationLirstName"
+                                        placeholder="Andrew" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="quickRegisterationLastName">Last Name</label>
+                                    <input type="text" class="form-control" id="quickRegisterationLastName"
+                                        placeholder="James" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <label for="dobSelect">Date of Birth</label>
+                                    <!-- <div class="input-group"> -->
+
+                                    <div class="input-group date">
+                                        <input type="date" class="form-control flatpickr" id="dobSelect"
+                                            data-date-format="d/m/Y" placeholder="dd/mm/yy"><span
+                                            class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-calendar"
+                                                    id="dateOfBirthButton"></i></div>
+                                        </span>
+                                    </div>
+                                    <!-- <input type="text" class="form-control" id="dobSelect" placeholder="dd/mm/yy" style="padding-left: 0.5vw;padding-right:0;"> -->
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="religionSelect">Mother Tongue</label>
+                                    <select class="selectpicker" id="religionSelect">
+                                        <option selected>Christian</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <label for="religionSelect">Religion</label>
+                                    <select class="selectpicker" id="religionSelect">
+                                        <option selected>Christian</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="casteSelect">Caste</label>
+                                    <select class="selectpicker" id="casteSelect">
+                                        <option value="0" selected>Select</option>
+                                        <option value="1">Adi Dravida</option>
+                                        <option value="2">Agamudiyar</option>
+                                        <option value="3">Anglo Indian</option>
+                                        <option value="4">Apologistic</option>
+                                        <option value="5">Arunthathiya</option>
+                                        <option value="6">Badaga</option>
+                                        <option value="7">Boyar</option>
+                                        <option value="8">Caste No Bar</option>
+                                        <option value="9">Chekkalar</option>
+                                        <option value="10">Cheraman</option>
+                                        <option value="11">Chettiyar</option>
+                                        <option value="12">Devar</option>
+                                        <option value="13">DevendraKulaVellalar</option>
+                                        <option value="14">Dont wish to specify</option>
+                                        <option value="15">Garo</option>
+                                        <option value="16">Gavara Naidu</option>
+                                        <option value="17">Goan</option>
+                                        <option value="18">Goundar</option>
+                                        <option value="19">Gramani</option>
+                                        <option value="20">Intercaste</option>
+                                        <option value="21">Kallar</option>
+                                        <option value="22">Khasi</option>
+                                        <option value="23">Knanya</option>
+                                        <option value="24">Kuki</option>
+                                        <option value="25">Madiga</option>
+                                        <option value="26">Mahar</option>
+                                        <option value="27">Mala</option>
+                                        <option value="28">Malankara</option>
+                                        <option value="29">Maravar</option>
+                                        <option value="30">Matang</option>
+                                        <option value="31">Mizo</option>
+                                        <option value="32">Moopanar</option>
+                                        <option value="33">Mudaliyar</option>
+                                        <option value="34">Mukkuvar</option>
+                                        <option value="35">Nadar</option>
+                                        <option value="36">Naga</option>
+                                        <option value="37">Naidu</option>
+                                        <option value="38">Others</option>
+                                        <option value="39">Others [Aasariyar] </option>
+                                        <option value="40">Others [BC]</option>
+                                        <option value="41">Others [cast no bar]</option>
+                                        <option value="42">Others [Konar]</option>
+                                        <option value="43">Others [Maruthuvar]</option>
+                                        <option value="44">Pallan</option>
+                                        <option value="45">Pallar</option>
+                                        <option value="46">Pilai</option>
+                                        <option value="47">Pillaimar</option>
+                                        <option value="48">Reddiar</option>
+                                        <option value="49">SC</option>
+                                        <option value="50">ST</option>
+                                        <option value="51">Udaiyar</option>
+                                        <option value="52">Vanniar</option>
+                                        <option value="53">Vellalar</option>
+                                        <option value="54">Yadhava</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <label for="countrySelect">Country</label>
+                                    <select class="selectpicker" id="countrySelect">
+                                        <option selected>India</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter Number">
+
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+
+                                    <label for="quickRegisterEmail">Email</label>
+                                    <input type="email" class="form-control" id="quickRegisterEmail"
+                                        aria-describedby="emailHelp" placeholder="Email Address">
+
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputPassowrd">Password</label>
+                                    <input type="password" class="form-control" id="inputPassowrd"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="Confirm Password">
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div>
+
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-warning" id="quickRegisterFormCardButton">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second row -->
+
+        <div class="row" style="background-color: #f72d58;padding: 1vh 3vw 1vh 2vw;margin: 0 0 0 0">
+            <div class="form-row fullWidth" style="padding-top: 2%;">
+
+                <div class="col-md-3 mb-3 " style="padding-left: 1.5%;">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                I am a</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option selected>Man</option>
+                                <option>Woman</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                Seeking a</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option selected>Woman</option>
+                                <option>Man</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                From</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option value="18" selected>18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                To</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option value="18" selected>18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30" selected>30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row fullWidth" style="padding-top: 2%;">
+
+                <div class="col-md-3 mb-3" style="padding-left: 1.5%;">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                Looking in</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option selected>India</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                City</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option selected>Chennai</option>
+                                <option>Hyderabad</option>
+                                <option>Bangalore</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <div class="col-5 mb-3 searchOptionName">
+                            <i class="searchFontItalics">
+                                Type</i>
+                        </div>
+                        <div class="col-7 mb-3 redSelect">
+                            <select class="selectpicker">
+                                <option value="0" selected>Any</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3" style="justify-content: center">
+                    <div class="row" style="justify-content: center;align-items: center;">
+                        <button type="button" class="btn btn-warning" style="width: 50%;">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third row -->
+
+        <div class="row fullWidth" style="margin:0 0 0 0">
+            <div class="row fullWidth" style="margin:0 0 0 0">
+                <div class="jumbotron">
+                    <h2 class="display-4 text-center"><b>Your Partner Search Just Got Better with <br>WeMatchMatrimony
+                            App!</b></h2>
+                    <p class="lead text-center text-justify paraDesc" style="color: #383838;">Hi this is the
+                        description area</p>
+                </div>
+
+            </div>
+            <div class="row fullWidth" style="padding: 2vh 5vw 2vh 5vw;margin:0 0 0 0;font-size: 1.5rem">
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./registerProfileIcon.JPG" class="card-img-top" alt="..." width="75%">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">Register Profile</h3>
+                            <p class="card-text text-center cardTextDescription">Some quick example text to build on the
+                                card title and
+                                make up the bulk
+                                of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./chooseYourMatch.JPG" class="card-img-top" alt="..." width="75%">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">Choose Your Match</h3>
+                            <p class="card-text text-center cardTextDescription">Some quick example text to build on the
+                                card title and
+                                make up the bulk
+                                of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./getMarried.JPG" class="card-img-top" alt="..." width="75%">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">Get Married</h3>
+                            <p class="card-text text-center cardTextDescription">Some quick example text to build on the
+                                card title and
+                                make up the bulk
+                                of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth row -->
+
+        <div class="row fullWidth" style="margin:0 0 0 0">
+            <div class="row fullWidth" style="margin:0 0 0 0">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-center"><b>Success Stories</b></h1>
+                    <p class="lead text-center text-justify" style="color: #383838;font-size: 2rem">Hi this is the
+                        description area</p>
+                </div>
+
+            </div>
+            <div class="row fullWidth" style="padding: 2vh 5vw 2vh 5vw;margin:0 0 0 0;font-size:1.5rem">
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card" style="width: 100%;justify-content: center">
+                        <img src="./ReubenwedsSarah.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">Reuben weds Sarah</h3>
+                            <p class="card-text text-justify cardTextDescription">Marriages are decided by God and our
+                                past life. Thanks to
+                                We Match Matrimony for your service. I found my life partner. Their personalized
+                                services from Mary was very nice...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card" style="width: 100%;justify-content: center">
+                        <img src="./PrincewedsNisha.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">Prince weds Nisha</h3>
+                            <p class="card-text  text-justify cardTextDescription">With so many preconditions and
+                                expectations, it was very
+                                difficult to find a perfect match. Thanks to We Match Matrimony. <br>Highly professional
+                                and
+                                personalized service from their team.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3" style="display:flex;justify-content: center">
+                    <div class="card" style="width: 100%;justify-content: center">
+                        <img src="./JohnwedsLydia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" style="color: #f72d58">John weds Lydia</h3>
+                            <p class="card-text text-justify cardTextDescription">Praise the lord. I have found my soul
+                                mate from this
+                                website wematchmatrimony.com. <br>Thanks for the wonderful service. Keep up the good
+                                work.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fifth row -->
+
+
+        <div class="row fullWidth" style="margin:0 0 0 0">
+            <div class="row fullWidth" style="margin:0 0 0 0">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-center"><b>Recent Registrations</b></h1>
+                    <p class="lead text-center text-justify" style="color: #383838;font-size: 2rem">Hi this is the
+                        description area</p>
+                </div>
+
+            </div>
+            <div class="row fullWidth" style="padding: 2vh 5vw 2vh 5vw;margin:0 0 0 0;font-size:1rem">
+                <div class=" col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./registrationsImage1circle.jpg" class="card-img-top" alt="..."
+                            style="border-radius:100%">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #f72d58">WMM5022726</h5>
+                            <p class="card-text  text-center text-justify">25 Years old
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./registrationsImage2circle.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #f72d58">WMM5022726</h5>
+                            <p class="card-text text-center text-justify">26 Years old
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./registrationsImage3circle.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #f72d58">WMM5022726</h5>
+                            <p class="card-text text-center text-justify">28 Years old
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="card noBorderCard" style="width: 100%;justify-content: center">
+                        <img src="./registrationsImage4circle.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #f72d58">WMM5022726</h5>
+                            <p class="card-text text-center text-justify">25 Years old
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- sixth row -->
+        <div class="row fullWidth" style="margin:0 0 0 0">
+            <div class="row fullWidth" style="margin:0 0 0 0">
+                <div class="jumbotron" style="padding-bottom: 2vh;margin-bottom:1vh;">
+                    <h1 class="display-4 text-center"><b>Video Testimonial</b></h1>
+                    <p class="lead text-center text-justify" style="color: #383838;font-size: 2rem">Hi this is the
+                        description area</p>
+                </div>
+
+            </div>
+            <div class="row fullWidth" style="padding: 2vh 5vw 2vh 5vw;margin:0 0 0 0;font-size:1rem">
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="embed-responsive embed-responsive-16by9" style="border-radius: 10%">
+                        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/FM7MFYoylVs"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="embed-responsive embed-responsive-16by9" style="border-radius: 10%">
+                        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/hT_nvWreIhg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="embed-responsive embed-responsive-16by9" style="border-radius: 10%">
+                        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2Vv-BfVoq4g"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3" style="display:flex;justify-content: center">
+                    <div class="embed-responsive embed-responsive-16by9" style="border-radius: 10%">
+                        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/DM40cXEZR4I"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- seventh row -->
+    </div>
+    <footer class="position-bottom">
+        <div class="row fullWidth" style="padding-top:2vh;margin:0 0 0 0;background-color: #F9E8EE">
+            <div class="row fullWidth" style="margin:0 0 0 0">
+                <div class="col-sm-12 col-md-6 mb-3" style="display:flex;justify-content: center">
+                    <div class="row fullWidth justify-content-center" style="width: 100vw;">
+                        <img class="img-fluid footerLogo" src="./footerLogo.JPG" alt="WeMatch Matrimony">
+                        <div class="row fullWidth justify-content-center">
+                            <p class="text-center footerCaption">We at WeMatch Matrimony offer personalized services as
+                                per the requirement of the families.<br>
+                                We believe that a marriage should be noble and one should bring relations bages on
+                                utmost faith and trust, Mrs. Sheba.<br> </p>
+                        </div>
+                        <a href="" style="color:#f72d58">Learn More</a>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-2 mb-3" style="display:flex;justify-content: center;padding-top: 5vh;">
+                    <p style="color: #f0b54f;font-size: 1.5rem">>> </p>&nbsp;
+                    <div style="color:#f72d58;font-size:1.5rem">Quick links<br>
+                        <ul style="list-style:none;font-size: 1rem;padding-left: 0;">
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Search</a></li>
+                            <li><a href="">Upgrade</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-2 mb-3" style="display:flex;justify-content: center;padding-top: 5vh;">
+                    <p style="color: #f0b54f;font-size: 1.5rem">>></p> &nbsp;
+                    <div style="color:#f72d58;font-size:1.5rem">Other links<br>
+                        <ul style="list-style:none;font-size: 1rem;padding-left: 0;">
+                            <li><a href="">FAQ's</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cancellation Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-2 mb-3" style="display:flex;justify-content: center;align-items: center">
+                    <ul class="fontAwesomeSocialMediaIconsUl list-group list-group-horizontal-sm" style="list-style:none;width: 100%;padding-left: 0;justify-content: center;">
+                        <a href="" class="list-group-item list-group-item-action d-flex justify-content-center listNoborder" style="background-color: #F9E8EE"><i class="fa fa-facebook-square"></i></a>
+                        <a href="" class="list-group-item list-group-item-action d-flex justify-content-center listNoborder" style="background-color: #F9E8EE"><i class="fa fa-twitter-square"></i></a>
+                        <a href="" class="list-group-item list-group-item-action d-flex justify-content-center listNoborder" style="background-color: #F9E8EE"><i class="fa fa-youtube-square"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row fullWidth footer mt-auto py-3"
+                style="margin:0 0 0 0;background-color: #e2c1c8;justify-content: center">
+                <p class="text-center" style="color:#f72d58">© 2019 WeMatch Matrimony - All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- DatePicker -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script> -->
+
+
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.2/flatpickr.js"></script>
+
+
+    <script>
+        // $('.input-group.date').datepicker({
+        //     format: "dd/mm/yy",
+        //     orientation: "bottom auto",
+        //     daysOfWeekHighlighted: "0,6",
+        //     todayHighlight: true
+        // });
+
+        $(".flatpickr").flatpickr(
+            { allowInput: true }
+
+        );
+    </script>
+</body>
+
+</html>

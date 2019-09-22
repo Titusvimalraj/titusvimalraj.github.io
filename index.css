@@ -1,0 +1,502 @@
+:root{
+    font-size:16px;
+}
+
+body{
+    padding-top: 15vh;
+}
+
+/* *{
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: red;
+    font-family: 'Roboto', sans-serif;
+
+} */
+
+.row{
+    margin:0 0 0 0;
+}
+
+.quickregisterFormBackground{
+    background-image: url("./weddingBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+*::-webkit-scrollbar {
+    width: 0.3vw;
+    background-color: white;
+    
+} 
+
+*::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #f72d58;
+    border-radius: 0.5vw;
+}
+
+.logo{
+    width:20vw;
+}
+
+.navlinkItem{
+    font-size: 1rem;
+}
+
+.fullWidth{
+    width:100%;
+}
+
+.noBorderCard{
+    border: none;
+}
+
+.dropdown-menu .show{
+    overflow-y:scroll;
+    max-height: 25vh;
+}
+
+.listNoborder{
+border: none;
+} 
+
+.footerCaption{
+    width: 70%;
+}
+
+
+/* body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-days > table > thead > tr:nth-child(2){
+    background-color:#383838;
+    color:white;
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-days > table > thead > tr:nth-child(2) > th.prev{
+    background-color: #f72d58;
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-days > table > thead > tr:nth-child(2) > th.next{
+    background-color: #f72d58;
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-months > table > thead > tr:nth-child(2) > th.datepicker-switch{
+    background-color: #f72d58;
+    color:white;
+}
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-months > table > tbody > tr > td > span.month.focused{
+    background-color: #6e9adb; 
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom{
+    background-color: lavenderblush;
+}
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-months > table > thead > tr:nth-child(2) > th.prev{
+    background-color:#383838;
+    color:white;
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom > div.datepicker-months > table > thead > tr:nth-child(2) > th.next{
+    background-color:#383838;
+    color:white;
+} */
+
+#dobSelect{
+    background-color:white;
+}
+
+.flatpickr-current-month{
+    background-color: #f72d58;
+    color:white;
+}
+
+.flatpickr-prev-month{
+    background-color: lavenderblush;
+    color:white;
+}
+
+.flatpickr-next-month{
+    background-color: lavenderblush;
+    color:white;
+}
+
+.flatpickr-months{
+    background-color: #f72d58;
+}
+
+.flatpickr-weekdays{
+    background-color: #4a83ff;
+    
+}
+
+
+
+div.flatpickr-weekdays > div > span{
+    color: white;
+}
+
+.jumbotron{
+    color: #f72d58;
+    background-color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100vw;
+}
+
+
+
+
+
+@media only screen and (max-width: 400) {
+    .quickRegisterForm{
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+.quickRegisterForm{
+        width: 30vw;
+    }
+.loginNavFormContainer{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin:0 0 0 0;
+}
+.loginNavForm{
+    width: 100%;
+}
+
+.loginNavFormInput{
+    display: flex;
+    align-items: flex-end;
+    width: 12vw;
+}
+.loginNavFormLoginButtonDiv{
+    width: 5vw;
+}
+.loginNavFormLoginButtonLi{
+    display:flex;
+    align-items: center;
+}
+
+.inputwidth{
+    width: 100%;
+}
+
+.loginNavFormLi{
+padding-right: 5%;
+}
+
+
+}
+
+@media only screen and (min-width: 1450px){
+    .navlinkItem{
+        font-size: 1.5rem;
+    }
+
+    .searchFontItalics{
+        color: white;
+        display:flex;
+        justify-content: flex-end;
+        font-size:2rem;
+    }
+
+    div.col-7.mb-3.redSelect > div > button > div > div > div{
+        font-size: 2rem;
+    }
+
+    .quickregisterFormBackground{
+        background-image: url("./weddingBackground.jpg");
+        background-repeat: repeat;
+        background-size: auto 110vh;
+    }
+    .fontAwesomeSocialMediaIconsUl{
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1450px){
+    .quickregisterFormBackground{
+        background-image: url("./weddingBackground.jpg");
+        background-repeat: repeat;
+        background-size: auto 110vh;
+    }
+  
+    .searchFontItalics{
+        color: white;
+        display:flex;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+    }
+
+    div.col-7.mb-3.redSelect > div > button > div > div > div{
+        font-size: 1.5rem;
+    }
+
+    .navlinkItem{
+        font-size: 1.2rem;
+    }
+
+    .fontAwesomeSocialMediaIconsUl{
+        font-size: 2vw;
+    }
+
+    .footerLogo{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1200px){
+.quickregisterFormBackground{
+    background-image: url("./weddingBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 110vh;
+ 
+}
+.navlinkItem{
+    font-size: 1rem;
+}
+}
+@media only screen and (max-width: 768px){
+    .quickregisterFormBackground{
+        background-image: url("./weddingBackground.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 120vh;
+     
+    }
+
+    .searchFontItalics{
+        color: white;
+        display:flex;
+        justify-content: flex-end;
+        font-size:1.3rem;
+    }
+    div.col-7.mb-3.redSelect > div > button > div > div > div{
+        font-size: 1.3rem;
+    }
+
+    .fontAwesomeSocialMediaIconsUl{
+        font-size: 5vw;
+    }
+
+    footer > div > div:nth-child(1) > div.col-sm-12.col-md-2.mb-3 > ul{
+        flex-direction: row;    
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .logo{
+        width:60vw;
+    }
+
+    .navLinkLi{
+        display: flex;
+        justify-content: center;
+    }
+
+    .centerContent{
+        display: flex;
+        justify-content:center;
+    }
+
+    .inputwidth{
+        width: 100%;
+    }
+
+    .loginNavFormUl{
+        width: 100%;
+    }
+    .loginNavFormLi{
+        padding-top: 1%;
+        }
+
+    .loginNavFormLoginButtonLi{
+            padding-top: 1%;
+        }
+
+    .dropdown-menu{
+            max-width: 40vw;
+            max-width: 30vw;
+        }
+    
+    .display-4{
+        font-size: 2rem;
+    }
+
+    .paraDesc{
+        font-size: 1.5rem
+    }
+
+    .fontAwesomeSocialMediaIconsUl{
+        font-size: 10vw;
+    }
+        
+}
+
+@media only screen and (max-width: 992px) and (min-width: 576px){
+    .logo{
+        width:50vw;
+    }
+
+    .navLinkLi{
+        display: flex;
+        justify-content: center;
+    }
+
+    .centerContent{
+        display: flex;
+        justify-content:center;
+    }
+
+    .inputwidth{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .loginNavFormUl{
+        width: 100%;
+    }
+    .loginNavFormLabel{
+        width: 100%;
+    }
+    .form-inline .form-control{
+        width:100%;
+    }
+
+    .loginNavFormLi{
+        padding-top: 1%;
+        }
+
+    
+    .loginNavFormLoginButtonLi{
+            padding-top: 1%;
+        }  
+        
+    .cardTextDescription    {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .form-inline .form-control{
+        width:100%;
+    }
+    .paraDesc{
+        font-size: 2rem
+    }
+}
+
+
+
+/* body Css */
+
+
+.quickRegisterFormCard{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 10% 5% 5%;
+}
+
+
+#quickRegisterFormCardTitle{
+    color: #f72d58;
+}
+
+/* #quickRegisterFormCardButton{
+    border-radius: 15%;
+} */
+
+.card{
+    border-radius: 2%
+}
+
+
+div.col-7.mb-3.redSelect > div > button{
+
+    background-color: #f72d58;
+    color: white;
+ }
+
+div.col-7.mb-3.redSelect > div > button > div > div > div {
+    border-right-style: solid;
+    border-right-width: 1%;
+    border-right-color: white;
+}
+
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    
+    .quickRegisterForm{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    
+    
+    .quickRegisterFormCard{
+        display: flex;
+        justify-content: center;
+        padding: 5% 5% 5% 5%;
+    }
+}
+@media only screen  and (min-width:400px) and (max-width: 992px){
+.quickRegisterForm{
+    width: 70vw;
+}
+}
+@media only screen  and (min-width:768px) and (max-width: 1200px){
+.searchFontItalics{
+    color: white;
+    display:flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    width: 100%;
+}
+.searchOptionName{
+    display: flex;
+    align-items: center;
+}
+
+.fontAwesomeSocialMediaIconsUl{
+    font-size: 4vw;
+}
+
+.footerLogo{
+    width: 100%;
+}
+}
+
+
+@media only screen  and (min-width:768px) and (max-width: 1050px){
+    .searchFontItalics{
+        color: white;
+        display:flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    div.col-7.mb-3.redSelect > div > button > div > div > div{
+        font-size: 1rem;
+    }
+
+     
+    
+}
+
+@media only screen  and (min-width:768px){
+    .list-group-horizontal-sm{
+        flex-direction: column;
+    } 
+}
