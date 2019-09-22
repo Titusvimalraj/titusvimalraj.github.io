@@ -249,11 +249,11 @@ padding-right: 5%;
         width: 50%;
     }
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width:768px) and (max-width: 1200px){
 .quickregisterFormBackground{
     background-image: url("./weddingBackground.jpg");
     background-repeat: no-repeat;
-    background-size: auto 110vh;
+    background-size: auto 120vh;
  
 }
 .navlinkItem{
@@ -289,6 +289,11 @@ padding-right: 5%;
         padding: 0 0 0 0;
         font-size: 0.9rem;
     }
+
+    .navlinkItem{
+    font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
