@@ -334,6 +334,10 @@ padding-right: 5%;
     .fontAwesomeSocialMediaIconsUl{
         font-size: 10vw;
     }
+    
+    .flatpickr{
+        padding: 0 0 0 0;
+    }
         
 }
 
