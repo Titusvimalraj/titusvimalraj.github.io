@@ -1,0 +1,36 @@
+$break-small: 540px;
+$break-medium: 720px;
+$break-large: 960px;
+$break-extra-large: 1140px;
+
+*{
+    border: 1px solid red;
+    
+}
+
+// ion-img{
+//     @media only screen and (min-width: $break-large){
+//         width: 20%;
+//     }
+//     @media only screen and (max-width: $break-large){
+//         width: 80%;
+//     }
+    
+// }
+
+.full-width-row{
+    @media only screen and (max-width: 1200px){
+                width: 100vw!important;
+            }
+}
+
+.skills-col{
+    @media only screen and (min-width: 1200px) and (max-width: 1300px){
+        width: 100vw!important;
+    }
+}
+
+
+// #profile-photo-card{
+//     height: 100%!important;
+// }
