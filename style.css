@@ -1,0 +1,173 @@
+* {
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    background: rgb(148, 58, 180);
+    background: -moz-linear-gradient(34deg, rgba(148, 58, 180, 1) 0%, rgba(100, 29, 253, 1) 50%, rgba(252, 69, 248, 1) 100%);
+    background: -webkit-linear-gradient(34deg, rgba(148, 58, 180, 1) 0%, rgba(100, 29, 253, 1) 50%, rgba(252, 69, 248, 1) 100%);
+    background: linear-gradient(34deg, rgba(148, 58, 180, 1) 0%, rgba(100, 29, 253, 1) 50%, rgba(252, 69, 248, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#943ab4", endColorstr="#fc45f8", GradientType=1);
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+main,
+section {
+    min-height: 100%;
+}
+
+p {
+    font-weight: 200!important;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+.heading-name {
+    padding: 5vh 0 5vh 5vw;
+    margin: 0;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+}
+
+.heading-name-job-role {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end
+}
+
+a {
+    z-index: 100;
+}
+
+
+/* .row {
+    min-height: 100%;
+} */
+
+.flex-column {
+    width: max-content;
+}
+
+.side-menu {
+    position: absolute;
+    left: -130px;
+    min-height: max-content;
+    padding: 0;
+    transition: 0.3s;
+    z-index: 100;
+    -webkit-box-shadow: 10px 10px 28px -2px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 10px 28px -2px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 10px 28px -2px rgba(0, 0, 0, 0.36);
+}
+
+.side-menu:hover {
+    left: 0px;
+}
+
+.tab-pane {
+    cursor: pointer;
+}
+
+.content-area {
+    /* z-index: -1; */
+    color: white;
+}
+
+.side-menu-list {
+    height: max-content;
+    background-color: white;
+}
+
+.home-content-col {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.home-content-col>h3 {
+    width: max-content;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-list-objective-languages-known {
+    width: 100%;
+    color: black;
+}
+
+.skills-icon {
+    width: 60px;
+    font-size: 60px;
+}
+
+.text-white {
+    color: white;
+}
+
+.work-company-header {
+    color: #40d77c;
+}
+
+.achievements-card {
+    color: black;
+}
+
+.certificates-cards>.col-12 {
+    margin-top: 2%;
+}
+
+
+/* media queries */
+
+@media (max-width: 576px) {
+    .certificates-carousel {
+        visibility: hidden;
+        display: none;
+    }
+    .home-links {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .certificates-carousel {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .list-50-width {
+        width: 50%;
+    }
+    .certificates-carousel {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .list-50-width {
+        width: 50%;
+    }
+    .certificates-cards {
+        visibility: hidden;
+        display: none;
+    }
+}

@@ -2,738 +2,764 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Titus Vimal Raj - Resume</title>
-    <link rel="icon" href="./TITUSVIMALRAJAPPLICATIONPHOTO.jpg" type="image/x-icon" />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-    <link rel="stylesheet" href="style.scss">
+    <meta charset="UTF-8">
+    <link rel="icon" href="./TITUSVIMALRAJAPPLICATIONPHOTO.jpg" type="image/x-icon">
+    <title>Titus Vimal Raj Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <ion-app>
-        <ion-toolbar color="primary">
-            <ion-buttons slot="start">
-                <ion-back-button></ion-back-button>
-            </ion-buttons>
-            <ion-title slot="start">TITUS VIMAL RAJ</ion-title>
-        </ion-toolbar>
-        <ion-content>
-            <ion-grid>
-                <ion-row class="ion-align-items-stretch">
-                    <ion-col size="12" size-xl="4" offset-xl="1">
-                        <ion-card id="profile-photo-card" style="height: 100%;">
-                            <ion-list>
-                                <ion-item>
-                                    <div class="ion-justify-content-center" style="width: 100%; display: flex">
-                                        <ion-img src="./TITUSVIMALRAJAPPLICATIONPHOTO.jpg"></ion-img>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <div class="col-2 side-menu">
+                    <div class="nav flex-column nav-pills side-menu-list" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">About Me &emsp;<i class="fa fa-home fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills &emsp;<i class="fa fa-wrench fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="work-experience-tab" data-toggle="pill" href="#work-experience" role="tab" aria-controls="work-experience" aria-selected="false">Experience &emsp;<i class="fa fa-briefcase fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="education-tab" data-toggle="pill" href="#education" role="tab" aria-controls="education" aria-selected="false">Education &emsp;<i class="fa fa-book fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="projects-tab" data-toggle="pill" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects &emsp;<i class="fa fa-code fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="certifications-tab" data-toggle="pill" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">Certifications &emsp;<i class="fa fa-certificate fa-pull-right" aria-hidden="true"></i></a>
+                        <a class="nav-link" id="achievements-tab" data-toggle="pill" href="#achievements" role="tab" aria-controls="achievements" aria-selected="false">Achievements &emsp;<i class="fa fa-trophy fa-pull-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 content-area">
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container-fluid home-container">
+                            <h2>About Me</h2>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center home-content-col">
+                                    <img class="img-fluid profile-photo" src="./TITUSVIMALRAJAPPLICATIONPHOTO.jpg" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center home-content-col">
+                                    <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                        <li class="list-group-item">
+                                            <h3>
+                                                Enthusiastic developer looking forward to challenges in the field of Engineering
+                                            </h3>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width">English</li>
+                                                <li class="list-group-item home-list-languages-item list-50-width">Full Professional Proficiency</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width">Tamil</li>
+                                                <li class="list-group-item home-list-languages-item list-50-width">Native or Bilingual Proficiency</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width">Hindi</li>
+                                                <li class="list-group-item home-list-languages-item list-50-width">Full Professional Proficiency</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <h3>
+                                        Interests
+                                    </h3>
+                                    <kbd>Football</kbd>
+                                    <kbd>Reading</kbd>
+                                    <kbd>Coding</kbd>
+                                    <kbd>Travel</kbd>
+                                </div>
+                                <div class="col-12 text-wrap">
+
+                                    <ul class="list-group list-group-flush home-list-objective-languages-known mt-4 text-wrap">
+                                        <h3 class="text-white">
+                                            Contact and Profile Information
+                                        </h3>
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width">
+                                                    <i data-feather="mail"></i> titusvimalraj@gamil.com
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width text-wrap">
+                                                    <i data-feather="chrome"></i>
+                                                    <a class="home-links" href="http://titusvimalrajc.wixsite.com/mysite">https://titusvimalrajc.wixsite.com/mysite</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md text-wrap">
+                                                <li class="list-group-item home-list-languages-item list-50-width">
+                                                    <i data-feather="smartphone"></i> +91-8610265950
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width text-wrap">
+                                                    <i data-feather="linkedin"></i>
+                                                    <a class="home-links" href="https://www.linkedin.com/in/titusvimal-raj-62b739113">
+                                                        https://www.linkedin.com/in/titusvimal-raj-62b739113
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item text-wrap">
+                                            <ul class="list-group list-group-horizontal-md text-wrap">
+                                                <li class="list-group-item home-list-languages-item list-50-width">
+                                                    <i data-feather="map-pin"></i> Chennai, India
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width text-wrap">
+                                                    <i data-feather="github"></i>
+                                                    <a class="home-links" href="https://github.com/Titusvimalraj">https://github.com/Titusvimalraj</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                        <div class="container-fluid">
+                            <h2>Skills</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="list-group list-group-flush home-list-objective-languages-known mt-4">
+
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-javascript-plain colored skills-icon"></i>
+                                                    <span>
+                                                        Javascript
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-angularjs-plain colored skills-icon"></i>
+                                                    <span>
+                                                        Angular
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-typescript-plain skills-icon colored"></i>
+                                                    <span>
+                                                        Typescript
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-css3-plain-wordmark skills-icon colored"></i>
+                                                    <span>
+                                                        CSS
+                                                    </span>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-html5-plain-wordmark colored skills-icon"></i>
+                                                    <span>
+                                                        HTML5
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-bootstrap-plain-wordmark colored skills-icon"></i>
+                                                    <span>
+                                                        Bootstrap
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-git-plain colored skills-icon"></i>
+                                                    <span>Git</span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-jquery-plain-wordmark skills-icon colored"></i>
+                                                    <span>Jquery</span>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <span class="material-icons skills-icon">
+                                                            personal_video
+                                                    </span>
+                                                    <span>Responsive Web Design</span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-ionic-original skills-icon colored"></i>
+                                                    <span>
+                                                        ionic
+                                                    </span>
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://rxjs-dev.firebaseapp.com/assets/images/favicons/favicon.ico" alt="">
+                                                    <span>
+                                                        RxJS
+                                                    </span>
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+
+                                                    <img class="img-fluid skills-icon" src="https://twoearsonemouthnet.files.wordpress.com/2017/11/icon-cloud-aws.png?w=1040" alt="">
+                                                    <span>
+                                                        AWS
+                                                    </span>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-nodejs-plain-wordmark colored skills-icon"></i>
+                                                    <span>
+                                                        NodeJs
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="">
+                                                    <span>
+                                                        socket.io
+                                                     </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <i class="devicon-mongodb-plain-wordmark colored skills-icon"></i>
+                                                    <span>
+                                                    mongoDB
+                                                   </span>
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://cdn-images-1.medium.com/fit/t/1600/480/1*iDvsmUwzZQxJSKdL0xzwIA.png" alt=""> <span>
+                                                        mongoose
+                                                    </span>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-express-original-wordmark colored skills-icon"></i>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://icon-library.com/images/rest-api-icon/rest-api-icon-8.jpg" alt="">
+                                                    <span>
+                Rest API
+             </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <i class="devicon-redis-plain-wordmark colored skills-icon"></i>
+                                                    <span>
+            redis
+           </span>
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://cdn.auth0.com/blog/jwt/logo-400.png" alt=""> <span>
+                JWT
+            </span>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-nginx-plain-wordmark colored skills-icon"></i>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <i class="devicon-mysql-plain-wordmark colored skills-icon"></i>
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <i class="devicon-python-plain-wordmark colored skills-icon"></i>
+
+
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-django-plain-wordmark colored skills-icon"></i>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://seeklogo.com/images/S/selenium-logo-DB9103D7CF-seeklogo.com.png" alt="">
+                                                    <span>
+                                                        Selenium
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://cdn4.vectorstock.com/i/1000x1000/34/83/outline-automation-icon-isolated-black-simple-vector-28253483.jpg" alt="">
+                                                    <span>
+                                                        Automation Testing
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/soapui-icon.png" alt="">
+
+                                                    <span>
+                                                        SoapUi
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://driven.design/wp-content/uploads/2013/07/Homepage-SolidWorks.jpg" alt="">
+
+                                                    <span>
+                                                        SolidWorks
+                                                    </span>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- next skills row -->
+                                        <li class="list-group-item">
+                                            <ul class="list-group list-group-horizontal-md">
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <img class="img-fluid skills-icon" src="https://www.clipartmax.com/png/middle/114-1141590_catia-v5-questions-and-answers-catia-v5r21-logo.png" alt="">
+                                                    <span>
+                                                        Catia V5
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://image.flaticon.com/icons/png/512/44/44215.png" alt="">
+                                                    <span>
+                                                        3D Printing
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+                                                    <img class="img-fluid skills-icon" src="https://pbs.twimg.com/profile_images/1231933945123688448/Taf1IIHN_400x400.jpg" alt="">
+
+                                                    <span>
+                                                        Ansys
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item home-list-languages-item list-50-width d-flex align-items-center">
+
+                                                    <i class="devicon-photoshop-plain colored skills-icon"></i>
+
+                                                    <span>
+                                                        Photoshop
+                                                    </span>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="work-experience" role="tabpanel" aria-labelledby="work-experience-tab">
+                        <div class="container-fluid">
+                            <h2>Work Experience</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">MEAN Stack Developer, Ikomet Technology Pvt Ltd (02/2018 – Present) Chennai, India</h3>
+                                                </li>
+                                                <h4>
+                                                    Achievements/Tasks
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Working as a MEAN Stack developer in making a Workflow application for e publishing automation industry.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Created the front end and backend from Scratch to operational release stage with very minimal bugs.
+                                                </li>
+                                                <h4>
+                                                    Contact
+                                                </h4>
+                                                <p>
+                                                    <i data-feather="smartphone"></i> Ashok Ajay
+                                                </p>
+                                            </ul>
+                                        </div>
                                     </div>
-
-                                </ion-item>
-                                <ion-item lines="none">
-
-                                    <ion-card-header>
-                                        <ion-card-title>TITUS VIMAL RAJ</ion-card-title>
-                                        <ion-card-subtitle>MEAN Stack Developer</ion-card-subtitle>
-                                        <ion-text>Enthusiastic developer looking forward to challenges in the field of
-                                            Engineering</ion-text>
-                                    </ion-card-header>
-                                </ion-item>
-                            </ion-list>
-                            <ion-list>
-                                <ion-list-header lines="inset">
-                                    <ion-label>Languages Known</ion-label>
-                                </ion-list-header>
-                                <ion-item>
-                                    <ion-label color="primary">
-                                        <h3>English</h3>
-                                    </ion-label>
-                                    <ion-text>Full Professional Proficiency</ion-text>
-                                </ion-item>
-                                <ion-item>
-                                    <ion-label color="primary">
-                                        <h3>Tamil</h3>
-                                    </ion-label>
-                                    <ion-text>Native or Bilingual Proficiency</ion-text>
-                                </ion-item>
-                                <ion-item lines="none">
-                                    <ion-label color="primary">
-                                        <h3>Hindi</h3>
-                                    </ion-label>
-                                    <ion-text>Full Professional Proficiency</ion-text>
-                                </ion-item>
-                            </ion-list>
-                            <ion-list>
-                                <ion-list-header lines="inset">
-                                    <ion-label>Interests</ion-label>
-                                </ion-list-header>
-                                <ion-item>
-
-                                    <ion-chip>
-                                        <ion-icon name="football-outline" color="dark"></ion-icon>
-                                        <ion-label>Football</ion-label>
-                                    </ion-chip>
-
-
-                                    <ion-chip>
-                                        <ion-icon name="book-outline" color="dark"></ion-icon>
-                                        <ion-label>Reading</ion-label>
-                                    </ion-chip>
-
-
-                                    <ion-item>
-
-                                        <ion-chip>
-                                            <ion-icon name="code-slash-outline" color="dark"></ion-icon>
-                                            <ion-label>Coding</ion-label>
-                                        </ion-chip>
-
-                                        <ion-item lines="none">
-                                            <ion-chip>
-                                                <ion-icon name="car-sport-outline" color="dark"></ion-icon>
-                                                <ion-label>Travel</ion-label>
-                                            </ion-chip>
-                                        </ion-item>
-                            </ion-list>
-
-
-                        </ion-card>
-                    </ion-col>
-                    <ion-col size="12" size-xl="7" class="ion-align-items-stretch">
-                        <ion-row>
-                            <ion-col size="12">
-                                <ion-card>
-                                    <ion-card-header>
-                                        <ion-card-title>Contact and Profile Information</ion-card-title>
-                                    </ion-card-header>
-                                    <ion-card-content>
-                                        <ion-row>
-                                            <ion-col>
-                                                <ion-list>
-                                                    <ion-item>
-                                                        <ion-icon name="mail-outline" class="ion-padding"></ion-icon>
-                                                        <ion-text>titusvimalraj@gamil.com</ion-text>
-                                                    </ion-item>
-                                                    <ion-item>
-                                                        <ion-icon name="phone-portrait-outline" class="ion-padding">
-                                                        </ion-icon>
-                                                        <ion-text>8610265950</ion-text>
-                                                    </ion-item>
-                                                    <ion-item>
-                                                        <ion-icon name="location-outline" class="ion-padding">
-                                                        </ion-icon>
-                                                        <ion-text>Chennai, India</ion-text>
-                                                    </ion-item>
-                                                </ion-list>
-
-                                            </ion-col>
-                                            <ion-col>
-                                                <ion-list>
-                                                    <ion-item>
-                                                        <ion-icon name="logo-chrome" class="ion-padding"></ion-icon>
-                                                        <ion-text><a href="https://titusvimalrajc.wixsite.com/my
-                                                            site">https://titusvimalrajc.wixsite.com/my
-                                                                site</a></ion-text>
-                                                    </ion-item>
-                                                    <ion-item>
-                                                        <ion-icon name="logo-linkedin" class="ion-padding"></ion-icon>
-                                                        <ion-text><a href="https://www.linkedin.com/in/titusvimal-
-                                                            raj-62b739113">https://www.linkedin.com/in/titusvimal-
-                                                                raj-62b739113</a></ion-text>
-                                                    </ion-item>
-                                                    <ion-item>
-                                                        <ion-icon name="logo-github" class="ion-padding"></ion-icon>
-                                                        <ion-text><a
-                                                                href="https://github.com/Titusvimalraj">https://github.com/Titusvimalraj</a>
-                                                        </ion-text>
-                                                    </ion-item>
-                                                </ion-list>
-                                            </ion-col>
-                                        </ion-row>
-
-                                    </ion-card-content>
-                                </ion-card>
-                            </ion-col>
-
-                        </ion-row>
-                        <ion-row>
-                            <ion-col size="12" size-xl="7">
-                                <ion-card>
-                                    <ion-card-header>
-                                        <ion-card-title>Skills</ion-card-title>
-                                    </ion-card-header>
-
-                                    <ion-card-content>
-                                        <ion-button shape="round">Javascript</ion-button>
-                                        <ion-button shape="round">Typescript</ion-button>
-                                        <ion-button shape="round">CSS3</ion-button>
-                                        <ion-button shape="round">HTML5</ion-button>
-                                        <ion-button shape="round">Bootstrap</ion-button>
-                                        <ion-button shape="round">Git</ion-button>
-                                        <ion-button shape="round">Jquery</ion-button>
-                                        <ion-button shape="round">Responsive Design</ion-button>
-                                        <ion-button shape="round">Ionic</ion-button>
-                                        <ion-button shape="round">Hybrid Apps</ion-button>
-                                        <ion-button shape="round">RxJS</ion-button>
-                                        <ion-button shape="round">AWS</ion-button>
-                                        <ion-button shape="round">Ajax</ion-button>
-                                        <ion-button shape="round">Angular</ion-button>
-                                        <ion-button shape="round">NodeJs</ion-button>
-                                        <ion-button shape="round">Socket.io</ion-button>
-                                        <ion-button shape="round">MongoDB</ion-button>
-                                        <ion-button shape="round">Mongoose</ion-button>
-                                        <ion-button shape="round">ExpressJs</ion-button>
-                                        <ion-button shape="round">Rest APIs</ion-button>
-                                        <ion-button shape="round">Redis</ion-button>
-                                        <ion-button shape="round">JWT</ion-button>
-                                        <ion-button shape="round">Nginx</ion-button>
-                                        <ion-button shape="round">SQL</ion-button>
-                                        <ion-button shape="round">Python</ion-button>
-                                        <ion-button shape="round">Python Django</ion-button>
-                                        <ion-button shape="round">Selenium</ion-button>
-                                        <ion-button shape="round">Automation Testing</ion-button>
-                                        <ion-button shape="round">Soap UI</ion-button>
-                                        <ion-button shape="round">SolidWorks</ion-button>
-                                        <ion-button shape="round">Catia V5</ion-button>
-                                        <ion-button shape="round">3D printing</ion-button>
-                                        <ion-button shape="round">Mechanical Design</ion-button>
-                                        <ion-button shape="round">Ansys</ion-button>
-                                        <ion-button shape="round">Photoshop</ion-button>
-
-                                    </ion-card-content>
-
-
-                                </ion-card>
-
-
-                            </ion-col>
-                        </ion-row>
-
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-
-                    <ion-col size="12">
-                        <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>Achievements</ion-card-title>
-                            </ion-card-header>
-                            <ion-card-content>
-                                ACE Award for Innovation at Accenture <br />
-                                (08/2018 – 09/2018)
-                            </ion-card-content>
-
-
-                    </ion-col>
-
-                </ion-row>
-
-                <ion-row>
-
-                    <ion-col size="12">
-                        <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>Work Experience</ion-card-title>
-                            </ion-card-header>
-                            <ion-card-content>
-                                <ion-list>
-                                    <ion-item>
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">MEAN Stack
-                                                        Developer, Ikomet Technology Pvt Ltd (02/2018
-                                                        –
-                                                        Present) Chennai, India</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Achievements/Tasks</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Working as a MEAN Stack developer in
-                                                    making a Workflow
-                                                    application for e publishing automation industry.</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Created the front end and backend from
-                                                    Scratch to operational
-                                                    release stage with very minimal bugs.</ion-text>
-                                            </ion-item>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Contact</ion-label>
-                                            </ion-chip>
-                                            <ion-item lines="none">
-                                                <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
-                                                <ion-text>Ashok Ajay, 8124038005</ion-text>
-                                            </ion-item>
-                                        </ion-list>
-
-
-
-
-
-                                    </ion-item>
-                                    <ion-item>
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">Associate Software
-                                                        Engineer, Accenture Solutions Private
-                                                        Limited (02/2018 – 04/2019) Chennai, India</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Achievements/Tasks</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">I was working as an Automation tester
-                                                    with Selenium and was
-                                                    successful in achieving innovation in combinations of scripts,
-                                                    also was recognized with ACE award for Innovation for the same.
-                                                </ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text>Regression Testing.</ion-text>
-                                            </ion-item>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Contact</ion-label>
-                                            </ion-chip>
-                                            <ion-item lines="none">
-                                                <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
-                                                <ion-text>Anil Kumar Mishra, 9884433284</ion-text>
-                                            </ion-item>
-                                        </ion-list>
-                                    </ion-item>
-
-                                    <ion-item lines="none">
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">Research and
-                                                        Development Engineer Intern, Maker Global (05/2017 – 06/2017)
-                                                        Hyderabad, India</ion-title>
-
-                                                </ion-label>
-
-                                            </ion-list-header>
-                                            <ion-text class="ion-text-wrap">A 3D printing company working on design and
-                                                printing 3D models.</ion-text>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Achievements/Tasks</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">I was tasked to organize the work
-                                                    schedule and coordinate the subordinates.
-                                                </ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Team leader and also a designer.
-                                                </ion-text>
-                                            </ion-item>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Contact</ion-label>
-                                            </ion-chip>
-                                            <ion-item lines="none">
-                                                <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
-                                                <ion-text>Kraveenthar Kamal, 9629440854</ion-text>
-                                            </ion-item>
-                                        </ion-list>
-                                    </ion-item>
-                                </ion-list>
-
-
-
-                            </ion-card-content>
-                        </ion-card>
-                    </ion-col>
-
-                </ion-row>
-
-                <ion-row>
-
-                    <ion-col size="12">
-                        <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>Education</ion-card-title>
-                            </ion-card-header>
-                            <ion-card-content>
-                                <ion-list>
-                                    <ion-item>
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">Bachelor of
-                                                        Engineering in Mechanical at Loyola ICAM College of Engineering
-                                                        and Technology, 7.41 CPGA (06/14 – 04/2017)</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Project</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item lines="none">
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Design and Analysis of Ducted Wind
-                                                    Turbine</ion-text>
-                                            </ion-item>
-
-
-
-
-                                        </ion-list>
-                                    </ion-item>
-                                    <ion-item lines="none">
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">HSE –TamilNadu
-                                                        State Board at MCC Matriculation and Higher Secondary School,
-                                                        85.33% (06/11 – 03/2013)</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">Group</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item lines="none">
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Bio-Maths</ion-text>
-                                            </ion-item>
-
-
-                                        </ion-list>
-
-
-                                    </ion-item>
-
-
-
-                                </ion-list>
-                            </ion-card-content>
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row>
-
-                    <ion-col size="12">
-                        <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>Portfolio Projects</ion-card-title>
-                            </ion-card-header>
-                            <ion-card-content>
-                                <ion-list>
-                                    <ion-item>
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">Real Time To do
-                                                        List (www.realtimetodolist.info) Duration 15 days, Requirement
-                                                        provided by edWisor.com</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">
-                                                    https://github.com/Titusvimalraj/realTimeToDoListFrontend.git
-                                                </ion-label>
-                                            </ion-chip>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">
-                                                    https://github.com/Titusvimalraj/myFirstBackend.git</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Requirement – The requirement of this
-                                                    project was to create a web application for to do lists which would
-                                                    have
-                                                    real time notifications and features. The project was also supposed
-                                                    to be hosted in AWS cloud.</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Technologies used - Frontend
-                                                    Technologies - HTML5, CSS3, JS, Bootstrap and Angular 7</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Backend Technologies - NodeJS, ExpressJS
-                                                    and Socket.IO</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Database – MongoDB</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Notable npm packages - nodemailer, AWS
-                                                    SDK ,angular-calendar 6+</ion-text>
-                                            </ion-item>
-                                            <ion-item lines="none">
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Hosting - AWS (EC2, S3, Route 53)
-                                                </ion-text>
-                                            </ion-item>
-                                        </ion-list>
-                                    </ion-item>
-
-                                    <ion-item lines="none">
-                                        <ion-list>
-                                            <ion-list-header lines="inset">
-                                                <ion-label>
-                                                    <ion-title color="success" class="ion-text-wrap">Meeting Planner
-                                                        Scheduling system (www.meetingplanner.xyz) Duration 15 days,
-                                                        Requirement provided by
-                                                        edWisor.com</ion-title>
-                                                </ion-label>
-                                            </ion-list-header>
-
-
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">
-                                                    https://github.com/Titusvimalraj/meeting-planner-frontEnd
-                                                </ion-label>
-                                            </ion-chip>
-                                            <ion-chip color="secondary">
-                                                <ion-label color="dark">
-                                                    https://github.com/Titusvimalraj/meeting-plannerbackend</ion-label>
-                                            </ion-chip>
-
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Requirement – The requirement of this
-                                                    project was to create a web application for Admin and user mode
-                                                    where
-                                                    Admin can schedule meetings which user can only view. The project
-                                                    was also supposed to be hosted in AWS
-                                                    cloud.</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Technologies used - Frontend
-                                                    Technologies - HTML5, CSS3, JS, Bootstrap and Angular 7</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Backend Technologies - NodeJS, ExpressJS
-                                                    and Socket.IO</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Database – MongoDB</ion-text>
-                                            </ion-item>
-                                            <ion-item>
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Notable npm packages - nodemailer,
-                                                    angular-calendar 6+</ion-text>
-                                            </ion-item>
-                                            <ion-item lines="none">
-                                                <ion-icon name="code-working-outline" slot="start"></ion-icon>
-                                                <ion-text class="ion-text-wrap">Hosting - AWS (EC2, S3, Route 53)
-                                                </ion-text>
-                                            </ion-item>
-                                        </ion-list>
-                                    </ion-item>
-
-
-
-                                </ion-list>
-                            </ion-card-content>
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>Certifications</ion-card-title>
-                            </ion-card-header>
-
-                            <a style="text-decoration: none" href="https://www.caddcentre.rminfonetwork.com/images/cadd-logo.png">
-                                <ion-chip style="height: fit-content;">
-                                <ion-avatar>
-                                    <div style="padding: 5% 5% 5% 5%;">
-                                        <img src="https://www.caddcentre.rminfonetwork.com/images/cadd-logo.png">
+                                    <br>
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">Associate Software Engineer, Accenture Solutions Private Limited (02/2018 – 04/2019) Chennai, India</h3>
+
+                                                </li>
+                                                <h4>
+                                                    Achievements/Tasks
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> I was working as an Automation tester with Selenium and was successful in achieving innovation in combinations of scripts, also was recognized with ACE award
+                                                    for Innovation for the same.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Regression Testing.
+                                                </li>
+                                                <h4>
+                                                    Contact
+                                                </h4>
+                                                <p>
+                                                    <i data-feather="smartphone"></i> Anil Kumar Mishra, 9884433284
+                                                </p>
+                                            </ul>
+                                        </div>
                                     </div>
-
-                                </ion-avatar>
-                                <ion-label>Catia v5 (06/2016-01/2017) 3D modelling software certification provided by
-                                    CADD CENTRE</ion-label>
-                                <ion-icon name="close-circle"></ion-icon>
-                            </ion-chip>
-                            </a>
-                           
-
-
-                            <a style="text-decoration: none" href="https://www.caddcentre.rminfonetwork.com/images/cadd-logo.png">
-                                <ion-chip style="height: fit-content;"
-                                >
-
-
-                                <ion-avatar>
-                                    <div style="padding: 5% 5% 5% 5%;">
-                                        <img src="https://www.caddcentre.rminfonetwork.com/images/cadd-logo.png">
+                                    <br>
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">Research and Development Engineer Intern, Maker Global (05/2017 – 06/2017) Hyderabad, India</h3>
+                                                    <p>
+                                                        A 3D printing company working on design and printing 3D models.
+                                                    </p>
+                                                </li>
+                                                <h4>
+                                                    Achievements/Tasks
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> I was tasked to organize the work schedule and coordinate the subordinates.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Team leader and also a designer.
+                                                </li>
+                                                <h4>
+                                                    Contact
+                                                </h4>
+                                                <p>
+                                                    <i data-feather="smartphone"></i> Kraveenthar Kamal, 9629440854
+                                                </p>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </ion-avatar>
-                                <ion-label>3D printing (06/2016-01/2017) 3D Printing training and certification provided
-                                    by CADD CENTRE</ion-label>
-                                <ion-icon name="close-circle"></ion-icon>
-                            </ion-chip>
-                            </a>
-                            
+                                    <br>
+                                </div>
+                            </div>
 
-                            <a style="text-decoration: none" href="https://udemy-certificate.s3.amazonaws.com/image/UC-b31ea3d0-cf86-410b-b0a4-82363d8c8fa2.jpg?v=1587847560000">
-                                <ion-chip style="height: fit-content;">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                        <div class="container-fluid">
+                            <h2>Education</h2>
+                            <div class="row">
 
-
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img
-                                                src="https://udemy-certificate.s3.amazonaws.com/image/UC-b31ea3d0-cf86-410b-b0a4-82363d8c8fa2.jpg?v=1587847560000">
+                                <div class="col">
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">Bachelor of Engineering in Mechanical at Loyola ICAM College of Engineering and Technology, 7.41 CPGA (06/14 – 04/2017)</h3>
+                                                </li>
+                                                <h4>
+                                                    Project
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Design and Analysis of Ducted Wind Turbine
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> Python and Django Full Stack Web Developer Bootcamp on 04/26/2020 as taught
-                                        by Jose Portilla on Udemy. </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-    
-                            </a>
-                            
-
-                            <a style="text-decoration: none" href="https://udemy-certificate.s3.amazonaws.com/image/UC-5b3dced3-9b92-46e3-a757-6b70d2ff3d61.jpg">
-                                <ion-chip style="height: fit-content;">
-
-
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img
-                                                src="https://udemy-certificate.s3.amazonaws.com/image/UC-5b3dced3-9b92-46e3-a757-6b70d2ff3d61.jpg">
+                                    </div>
+                                    <br>
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">HSE –TamilNadu State Board at MCC Matriculation and Higher Secondary School, 85.33% (06/11 – 03/2013)
+                                                    </h3>
+                                                </li>
+                                                <h4>
+                                                    Group
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Bio-Maths
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> Ionic 5 - Build iOS, Android & Web Apps with Ionic & Angular on Udemy
-                                    </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-    
-                            </a>
-                            
-
-                            <a style="text-decoration: none" href="http://certificates-edu.s3.amazonaws.com/czoxMjoiMzM2ODExXzExMjQ2Ijs=">
-                                <ion-chip style="height: fit-content;">
+                                    </div>
+                                    <br>
 
 
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img
-                                                src="http://certificates-edu.s3.amazonaws.com/czoxMjoiMzM2ODExXzExMjQ2Ijs=">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                        <div class="container-fluid">
+                            <h2>Portfolio Projects</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">Real Time To do List (www.realtimetodolist.info) Duration 15 days, Requirement provided by edWisor.com</h3>
+
+                                                </li>
+                                                <h4>
+                                                    <a href="https://github.com/Titusvimalraj/realTimeToDoListFrontend.git">        https://github.com/Titusvimalraj/realTimeToDoListFrontend.git</a>
+                                                </h4>
+                                                <h4>
+                                                    <a href="https://github.com/Titusvimalraj/myFirstBackend.git">
+                                                    https://github.com/Titusvimalraj/myFirstBackend.git
+                                                </a>
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Requirement – The requirement of this project was to create a web application for to do lists which would have real time notifications and features. The
+                                                    project was also supposed to be hosted in AWS cloud.
+                                                </li>
+                                                <h5>
+                                                    Technologies used
+                                                </h5>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Frontend Technologies - HTML5, CSS3, JS, Bootstrap and Angular 7
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Backend Technologies - NodeJS, ExpressJS and Socket.IO
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Database – MongoDB
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Notable npm packages - nodemailer, AWS SDK
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Hosting - AWS (EC2, S3, Route 53)
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> RxJs 6 In Practice (with FREE E-Book) Course on May 2, 2020 on Eduonix
-                                    </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-                            </a>
-                            
+                                    </div>
+                                    <br>
 
-                            <a style="text-decoration: none" href="https://www.guvi.in/certificate?id=qkD18T79C47845SK2i">
-                                <ion-chip style="height: fit-content;">
+                                    <!-- next card  -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush home-list-objective-languages-known">
+                                                <li class="list-group-item">
+                                                    <h3 class="work-company-header">Meeting Planner Scheduling system (www.meetingplanner.xyz) Duration 15 days, Requirement provided by edWisor.com
+                                                    </h3>
 
+                                                </li>
+                                                <h4>
+                                                    <a href="https://github.com/Titusvimalraj/meeting-planner-frontEnd">https://github.com/Titusvimalraj/meeting-planner-frontEnd</a>
+                                                </h4>
+                                                <h4>
+                                                    <a href="https://github.com/Titusvimalraj/meeting-plannerbackend">
+                                                        https://github.com/Titusvimalraj/meeting-plannerbackend
+                                                </a>
+                                                </h4>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i>Requirement – The requirement of this project was to create a web application for Admin and user mode where Admin can schedule meetings which user can only
+                                                    view. The project was also supposed to be hosted in AWS cloud.
 
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img src="https://www.guvi.in/images/guvi-logo.png">
+                                                </li>
+                                                <h5>
+                                                    Technologies used
+                                                </h5>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Frontend Technologies - HTML5, CSS3, JS, Bootstrap and Angular 7
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Backend Technologies - NodeJS, ExpressJS and Socket.IO
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Database – MongoDB
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Notable npm packages - nodemailer, AWS SDK ,angular-calendar 6+
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-code" aria-hidden="true"></i> Hosting - AWS (EC2, S3, Route 53)
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> Python on Guvi. </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-    
-                            </a>
-                            
-                            <a style="text-decoration: none" href="https://www.guvi.in/certificate?id=w74EM52Y035us41m9o">
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
 
-                                <ion-chip style="height: fit-content;">
-
-
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img src="https://www.guvi.in/images/guvi-logo.png">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+                        <div class="container-fluid">
+                            <h2>Certifications</h2>
+                            <div class="row certificates-carousel">
+                                <div class="col-8 offset-2">
+                                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="5000">
+                                                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-5b3dced3-9b92-46e3-a757-6b70d2ff3d61.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b5935f03-ad15-41ca-98ae-ae702eb67fb5.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="./guvi_computational_thinking.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="./guvi_javascript.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="./guvi_python.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="http://certificates-edu.s3.amazonaws.com/czoxMjoiMzM2ODExXzExMjQ2Ijs=" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b31ea3d0-cf86-410b-b0a4-82363d8c8fa2.jpg?v=1587847560000" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="5000">
+                                                <img src="./UC-38c3309f-0f32-4502-9946-582ef41ecacb-MachineLearningJavascript.jpg" class="d-block w-100" alt="...">
+                                            </div>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> Computational Thinking On Guvi. </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
+                                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                            </a>
-                            
+                            <div class="row certificates-cards">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-5b3dced3-9b92-46e3-a757-6b70d2ff3d61.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b5935f03-ad15-41ca-98ae-ae702eb67fb5.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="./guvi_computational_thinking.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="./guvi_javascript.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="./guvi_python.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="http://certificates-edu.s3.amazonaws.com/czoxMjoiMzM2ODExXzExMjQ2Ijs=" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b31ea3d0-cf86-410b-b0a4-82363d8c8fa2.jpg?v=1587847560000" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <img src="./UC-38c3309f-0f32-4502-9946-582ef41ecacb-MachineLearningJavascript.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
 
-                            <a style="text-decoration: none" href="https://www.guvi.in/certificate?id=85I37V08aL80gDi1b9">
-                                <ion-chip style="height: fit-content;">
-
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img src="https://www.guvi.in/images/guvi-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements-tab">
+                        <div class="container-fluid">
+                            <h2>Achievements</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-8 offset-md-2">
+                                    <div class="card achievements-card">
+                                        <img class="card-img-top" src="./Accenture-Innovations-Awards.webp" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">ACE Award for Innovation at Accenture</h5>
+                                            <p class="card-text">(08/2018 – 09/2018)</p>
                                         </div>
-                                    </ion-avatar>
-                                    <ion-label> Javascript on Guvi</ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-                            </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <a style="text-decoration: none" href="https://edwisor.com">
-                                <ion-chip style="height: fit-content;">
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
 
-                                    <ion-avatar>
-                                        <div style="padding: 5% 5% 5% 5%;">
-                                            <img src="https://cdn.edwisor.com/marketing/edwisor_2.1.jpg">
-                                        </div>
-                                    </ion-avatar>
-                                    <ion-label> Mean Stack Developer Career Path at edWisor.com (04/2019 – 12/2019) Full
-                                        stack development training with
-                                        latest technologies such as Angular, NodeJs and Mongodb. Several more additional
-                                        technologies like Socket.io,
-                                        Bootstrap, expressJs, JWT, AWS, Nginx. </ion-label>
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </ion-chip>
-    
-                            </a>
-                            
-                            <ion-card-content>
+    <script src="script.js"></script>
 
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-
-            </ion-grid>
-        </ion-content>
-
-    </ion-app>
-
-    <script src="app.js"></script>
 </body>
 
 </html>
